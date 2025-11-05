@@ -1,7 +1,11 @@
 local wall = data.raw["wall"]["stone-wall"]
 
 wall.icon = "__IndustrialRevolution3Assets1__/graphics/icons/64/stone-wall.png"
-wall.next_upgrade = "concrete-wall"
+
+if settings.startup["IR3-enable-walls"].value == true then
+    wall.next_upgrade = "concrete-wall"
+end
+
 wall.dying_explosion = "stone-wall-explosion"
 wall.damaged_trigger_effect = {
     {

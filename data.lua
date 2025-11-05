@@ -6,19 +6,20 @@ if not (mods["IndustrialRevolution3Assets1"]
     return
 end
 
-require("prototypes/explosion/concrete-wall")
-require("prototypes/entity/concrete-wall")
-require("prototypes/item/concrete-wall")
-require("prototypes/recipe/concrete-wall")
-require("prototypes/technology/concrete-wall")
+if settings.startup["IR3-enable-walls"].value == true then
+    require("prototypes/explosion/concrete-wall")
+    require("prototypes/entity/concrete-wall")
+    require("prototypes/item/concrete-wall")
+    require("prototypes/recipe/concrete-wall")
+    require("prototypes/technology/concrete-wall")
 
-require("prototypes/explosion/steel-plate-wall")
-require("prototypes/entity/steel-plate-wall")
-require("prototypes/item/steel-plate-wall")
-require("prototypes/recipe/steel-plate-wall")
-require("prototypes/technology/steel-plate-wall")
+    require("prototypes/explosion/steel-plate-wall")
+    require("prototypes/entity/steel-plate-wall")
+    require("prototypes/item/steel-plate-wall")
+    require("prototypes/recipe/steel-plate-wall")
+    require("prototypes/technology/steel-plate-wall")
+end
 
--- stone must be last
 require("prototypes/explosion/stone-wall")
 require("prototypes/entity/stone-wall")
 require("prototypes/item/stone-wall")

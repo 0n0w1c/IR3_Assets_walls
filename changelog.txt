@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.0.3
+Date: 05.11.2025
+  Bugfixes:
+    - New walls should be optional
+  Changes:
+    - Added a startup setting to enable new walls (default: disabled)
+---------------------------------------------------------------------------------------------------
 Version: 0.0.2
 Date: 04.11.2025
   Bugfixes:

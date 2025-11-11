@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.0
+Date: 11.11.2025
+  Bugfixes:
+    - Concrete and steel plated wall recipes were enabled before research
+  Changes:
+    - Added concrete and steel plated gates
+---------------------------------------------------------------------------------------------------
 Version: 0.0.4
 Date: 07.11.2025
   Bugfixes:

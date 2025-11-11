@@ -13,14 +13,17 @@ if settings.startup["IR3-enable-walls"].value == true then
     require("prototypes/recipe/concrete-wall")
     require("prototypes/technology/concrete-wall")
 
+    require("prototypes/entity/concrete-gate")
+    require("prototypes/item/concrete-gate")
+    require("prototypes/recipe/concrete-gate")
+
     require("prototypes/explosion/steel-plate-wall")
     require("prototypes/entity/steel-plate-wall")
     require("prototypes/item/steel-plate-wall")
     require("prototypes/recipe/steel-plate-wall")
     require("prototypes/technology/steel-plate-wall")
-end
 
-require("prototypes/explosion/stone-wall")
-require("prototypes/entity/stone-wall")
-require("prototypes/item/stone-wall")
-require("prototypes/technology/stone-wall")
+    require("prototypes/entity/steel-plate-gate")
+    require("prototypes/item/steel-plate-gate")
+    require("prototypes/recipe/steel-plate-gate")
+end

@@ -2,6 +2,7 @@ local wall = table.deepcopy(data.raw["wall"]["stone-wall"])
 
 wall.name = "concrete-wall"
 wall.localised_name = { "entity-name.concrete-wall" }
+wall.icon = "__base__/graphics/icons/wall.png"
 wall.minable = { mining_time = 0.1, result = "concrete-wall" }
 wall.max_health = 500
 wall.next_upgrade = "steel-plate-wall"
@@ -31,14 +32,8 @@ wall.damaged_trigger_effect = {
 }
 wall.resistances = {
     {
-        decrease = 5,
-        percent = 25,
-        type = "physical"
-    },
-    {
-        decrease = 45,
-        percent = 70,
-        type = "impact"
+        percent = 80,
+        type = "acid"
     },
     {
         decrease = 20,
@@ -50,12 +45,18 @@ wall.resistances = {
         type = "fire"
     },
     {
-        percent = 80,
-        type = "acid"
+        decrease = 45,
+        percent = 70,
+        type = "impact"
     },
     {
         percent = 70,
         type = "laser"
+    },
+    {
+        decrease = 5,
+        percent = 25,
+        type = "physical"
     }
 }
 

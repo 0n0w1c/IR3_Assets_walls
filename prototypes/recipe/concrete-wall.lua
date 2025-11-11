@@ -1,7 +1,7 @@
 local recipe = table.deepcopy(data.raw["recipe"]["stone-wall"])
 
 recipe.name = "concrete-wall"
-recipe.enabled = true
+recipe.enabled = false
 recipe.ingredients = { { type = "item", name = "concrete", amount = 1 } }
 recipe.results = { { type = "item", name = "concrete-wall", amount = 1 } }
 

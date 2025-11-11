@@ -2,9 +2,11 @@ local wall = table.deepcopy(data.raw["wall"]["stone-wall"])
 
 wall.name = "steel-plate-wall"
 wall.localised_name = { "entity-name.steel-plate-wall" }
+wall.icon = "__IndustrialRevolution3Assets1__/graphics/icons/64/steel-plate-wall.png"
 wall.minable = { mining_time = 0.1, result = "steel-plate-wall" }
 wall.max_health = 700
 wall.next_upgrade = nil
+wall.impact_category = "metal"
 wall.dying_explosion = "steel-plate-wall-explosion"
 wall.corpse = "small-remnants"
 wall.damaged_trigger_effect = {
@@ -53,17 +55,11 @@ wall.damaged_trigger_effect = {
 }
 wall.resistances = {
     {
-        decrease = 10,
-        percent = 30,
-        type = "physical"
-    },
-    {
-        decrease = 45,
         percent = 80,
-        type = "impact"
+        type = "acid"
     },
     {
-        decrease = 30,
+        decrease = 25,
         percent = 50,
         type = "explosion"
     },
@@ -72,12 +68,18 @@ wall.resistances = {
         type = "fire"
     },
     {
-        percent = 70,
-        type = "acid"
+        decrease = 45,
+        percent = 80,
+        type = "impact"
     },
     {
         percent = 80,
         type = "laser"
+    },
+    {
+        decrease = 10,
+        percent = 30,
+        type = "physical"
     }
 }
 wall.pictures = {

@@ -7,7 +7,8 @@ data:extend({
         order = "002",
         prerequisites = { "concrete", "military-science-pack" },
         effects = {
-            { type = "unlock-recipe", recipe = "concrete-wall" }
+            { type = "unlock-recipe", recipe = "concrete-wall" },
+            { type = "unlock-recipe", recipe = "concrete-gate" }
         },
         unit = {
             count = 100,
